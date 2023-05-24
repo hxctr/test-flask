@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create post</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/static/post/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/static/post/css/style.css">
+</head>
+<body>
+    <input type="hidden" id="username" value="{{usuariol}}" readonly>
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="/static/post/images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" onsubmit="return false">
+                        <h2 class="form-title">Create a new post</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="cabecera" id="headline" placeholder="Headline"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="cuerpo" id="body_post" placeholder="Body"/>
+                        </div> 
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" onclick="post();" value="Post"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Did you finish <a href="/dashboard" class="loginhere-link">Let's go back to the dashboard</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="/static/post/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/post/js/main.js"></script>
+
+    <script src="/static/post/js/post.js"></script>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
