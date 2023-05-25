@@ -1,7 +1,7 @@
 let headers = new Headers();
 headers.append('Content-Type', 'application/json');
 headers.append('Accept', 'application/json');
-headers.append('Access-Control-Allow-Origin', 'http://localhost:5000');
+headers.append('Access-Control-Allow-Origin', 'https://appmedia.onrender.com');
 headers.append('Access-Control-Allow-Credentials', 'true');
 headers.append('GET', 'POST', 'OPTIONS');
 
@@ -13,7 +13,7 @@ function getSignUp() {
 	var username = document.querySelector("#username").value;
 	var password = document.querySelector("#password").value;
 	//Mando a hacer la peticion
-	fetch('http://localhost:5000/addUser', {
+	fetch('https://appmedia.onrender.com/addUser', {
 		method: 'POST',
 		headers: headers,
 		body: `{  

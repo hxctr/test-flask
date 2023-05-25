@@ -1,7 +1,7 @@
 let headers = new Headers();
 headers.append('Content-Type', 'application/json');
 headers.append('Accept', 'application/json');
-headers.append('Access-Control-Allow-Origin', 'http://localhost:5000');
+headers.append('Access-Control-Allow-Origin', 'https://appmedia.onrender.com');
 headers.append('Access-Control-Allow-Credentials', 'true');
 headers.append('GET', 'POST', 'OPTIONS');
 
@@ -10,7 +10,7 @@ function post() {
 	var headline = document.querySelector("#headline").value;
 	var body_post = document.querySelector("#body_post").value;
 
-	fetch('http://localhost:5000/add_post', {
+	fetch('https://appmedia.onrender.com/add_post', {
 		method: 'POST',
 		headers: headers,
 		body: `{  
